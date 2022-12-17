@@ -1,6 +1,6 @@
+# PyBer Analysis
 
-
-## Overview of Aalysis
+## Overview of Analysis
 
 ### Purpose 
 -   After starting a new job at a ride sharing company, PyBer i was tasked with a new assignment revolving around ride-sharing data by city type. The City types were broken down in to 3 sub catagories; Urban, Suburban, anmd Rural.  The main goal of the assignement was to analyze and present the comparisons between the three city types based on the sum of their fares by month over a four month period (Jan 2019 - April 2019). By going through the data we are able to see the major key differences between the city types with relation to the number of drivers in those city's and number of rides. Reviewing these items further helped paint a picture as wto why the weekly/ monthley fares were so different. 
@@ -10,14 +10,11 @@
 
 ## Results
 ### Ride-Sharing Data Among City Types
--  Between the three city types, see a breakdown of total data below in a table created using the code shown in [PyBer_Challenge.ipynb](https://github.com/Jess-Vannatter/PyBer_Analysis/blob/main/Starter_Code/Starter_Code/PyBer_Challenge.ipynb)  The code was used to pull the data from the two CSV file [Resources](https://github.com/Jess-Vannatter/PyBer_Analysis/tree/main/Starter_Code/Starter_Code/Resources) merged in to one data frame ```pyber_data_df = pd.merge(ride_data_df, city_data_df, how="left", on=["city", "city"]))```. The numbers represent the totals over a 4 month period (Jan 2019 - April 2019)[PyBer_Challenge.ipynb](https://github.com/Jess-Vannatter/PyBer_Analysis/blob/main/Starter_Code/Starter_Code/PyBer_Challenge.ipynb).
+-  Between the three city types, see a breakdown of total data below in a table created using the code shown in [PyBer_Challenge.ipynb](https://github.com/Jess-Vannatter/PyBer_Analysis/blob/main/Starter_Code/Starter_Code/PyBer_Challenge.ipynb). The code was used to pull the data from the two CSV file [Resources](https://github.com/Jess-Vannatter/PyBer_Analysis/tree/main/Starter_Code/Starter_Code/Resources) merged in to one data frame ```pyber_data_df = pd.merge(ride_data_df, city_data_df, how="left", on=["city", "city"]))```. The numbers represent the totals over a 4 month period (Jan 2019 - April 2019) [PyBer_Challenge.ipynb](https://github.com/Jess-Vannatter/PyBer_Analysis/blob/main/Starter_Code/Starter_Code/PyBer_Challenge.ipynb).
  	
-        Total Rides	    Total Drivers	   Total Fares	    Average Fare per Ride	    Average Fare per Driver
-Rural	    125	             78	            $4,327.93	            $34.62	                    $55.49
-Suburban	625	             490	        $19,356.33	            $30.97	                    $39.50
-Urban	    1,625	        2,405	        $39,854.38	            $24.53	                    $16.57
+![image](https://user-images.githubusercontent.com/117245167/208255021-aa46866b-1686-4a48-82ef-31c8ef8914d5.png)
 
-#### Differences in Ride-sharing Data among City Type
+### Differences in Ride-sharing Data among City Type
 -   When reviewing the data presented above, one can draw a couple obvious conclusions. Urban areas are going to uaually have a higher number of drivers and rides, which makes sense because the population will usually be higher/ more dense in an Urban setting. the table above corresponds with this statement, showing both total rides, and total drivers increasing pretty drasticall from Rural, to Suburban, and then even more to Urban areas.  As a result the total sum of fares will increase as we go from more rural areas to Urban areas. I would consider this to be a positive correlation. With that being said, even though the total number of fares increases as we go towards more rural areas, there is a negative correlation between the average fare per ride/ per driver. The figures for  Average fare per Ride and Average Fare per Driver decrease as we go from rural areas to Urban areas. Even though the total fares figure for Urban areas is almost 9.3% times higher than compared to the Rurual areas, becuase there are so many drivers and rides in urban areas the averages are much lower. Making the Rurual and Suburban areas more efficient
 
 ### Total Fare's by City Type
